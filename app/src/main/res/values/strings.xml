@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string-array name="notification_array">
+        <item>Home</item>
+        <item>Map View</item>
+        <item>List View</item>
+        <item>ChromeCast</item>
+        <item>Info</item>
+        <item>About Me</item>
+    </string-array>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_chromecast">ScreenCast</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+
+    <string name="title_about">About</string>
+    <string name="title_info">Information</string>
+    <string name="title_cast">ChromeCast</string>
+    <string name="desc_about">Vinay Potluri \n\n\n
+                            https://www.linkedin.com/in/vinaypotluri</string>
+    <string name="desc_info">A simple weather app that lists the weather info of 10 different airports in the US</string>
+    <string name="desc_cast">Support to ChromeCast can be added in the future version. \n\n
+                            All the weather information and news feed can be casted to Television with ChromeCast support</string>
+
+
+</resources>

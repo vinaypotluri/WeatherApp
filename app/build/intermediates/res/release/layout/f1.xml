@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+   <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearlayout1"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/mylayout1"
+                layout="@layout/current_weather" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mylayout2"
+                layout="@layout/week_description" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout><!-- From: file:/C:/Users/Vinay%20Potluri/AndroidStudioProjects/NavigationDrawer1/app/src/main/res/layout/f1.xml -->

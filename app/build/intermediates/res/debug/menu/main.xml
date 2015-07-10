@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/action_chromecast"
+          android:icon="@drawable/ic_cast_off_light"
+          android:title="@string/action_chromecast"
+          android:showAsAction="always" />
+
+</menu><!-- From: file:/C:/Users/Vinay%20Potluri/AndroidStudioProjects/NavigationDrawer1/app/src/main/res/menu/main.xml -->

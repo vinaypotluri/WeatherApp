@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:background="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <!-- layout for extra weather info -->
+
+    <!-- other info-->
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Humidity:"
+                android:layout_weight="0.25"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"/>
+            <TextView
+                android:text="value"
+                android:id="@+id/humidity"
+                android:layout_weight="0.25"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"/>
+            <TextView
+                android:text="DewPoint:"
+                android:layout_weight="0.25"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"/>
+            <TextView
+                android:text="value"
+                android:id="@+id/dewpoint"
+                android:layout_weight="0.25"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Wind:"
+                android:layout_weight="0.25"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"/>
+            <TextView
+                android:text="value"
+                android:id="@+id/winds"
+                android:layout_weight="0.25"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"/>
+            <TextView
+                android:text="Visibility:"
+                android:layout_weight="0.25"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"/>
+            <TextView
+                android:text="value"
+                android:id="@+id/visibility"
+                android:layout_weight="0.25"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Barometer:"
+                android:layout_weight="0.25"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"/>
+            <TextView
+                android:text="value"
+                android:id="@+id/barometer"
+                android:layout_weight="0.25"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"/>
+            <TextView
+                android:text="TimeZone:"
+                android:layout_weight="0.25"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"/>
+            <TextView
+                android:text="value"
+                android:id="@+id/timezone"
+                android:layout_weight="0.25"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- end of other details-->
+
+    <!-- full week prediction-->
+    <LinearLayout
+        android:layout_below="@+id/layout1"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <org.lucasr.twowayview.TwoWayView
+            android:id="@+id/lvItems"
+            style="@style/TwoWayView"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+/>
+
+    </LinearLayout>
+    <!-- end of full week prediction-->
+</RelativeLayout>
+<!-- From: file:/C:/Users/Vinay%20Potluri/AndroidStudioProjects/NavigationDrawer1/app/src/main/res/layout/week_description.xml -->

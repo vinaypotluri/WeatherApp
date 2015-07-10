@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp">
+
+    <TextView android:layout_marginTop="30dp"
+              android:id="@+id/day"
+              android:textStyle="bold"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textAppearance="?android:attr/textAppearanceListItemSmall"/>
+    <TextView android:id="@+id/label"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textAppearance="?android:attr/textAppearanceListItemSmall"/>
+    <TextView android:text="3"
+            android:id="@+id/value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"/>
+</LinearLayout><!-- From: file:/C:/Users/Vinay%20Potluri/AndroidStudioProjects/NavigationDrawer1/app/src/main/res/layout/custom_list_format.xml -->
