@@ -132,7 +132,7 @@ public class f1 extends Fragment implements SwipeRefreshLayout.OnRefreshListener
     }
 
     void SetCurrentWeather(gitmodel gitmodel)
-    {   // sets the current weather
+    {   // sets the current weatherre
         String weather = gitmodel.getcurrentWeather();
 
         l1.setVisibility(View.VISIBLE);
@@ -196,7 +196,13 @@ public class f1 extends Fragment implements SwipeRefreshLayout.OnRefreshListener
     public void onRefresh() {
         // pull to refresh
         Toast.makeText(getActivity(),"Refreshing data", Toast.LENGTH_LONG).show();
-        updateview(getLocationData());      // pulls location values & updates the view
+        
+         if(getLocationData()==null) {
+            Toast.makeText(getActivity(),"unable to retrieve location", Toast.LENGTH_LONG).show();
+        }
+        else {
+            updateview(getLocationData());      // pulls location values & updates the view
+        }
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
